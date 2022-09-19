@@ -1,0 +1,22 @@
+# In _config.yml
+title: Advanced Optics, Fall 2022
+author: emma marshall
+#logo: 
+execute:
+  execute_notebooks: force
+
+
+  
+only_build_toc_files: true
+
+execute:
+    allow_errors: true
+    timeout: 500
+
+repository:
+  url: https://github.com/e-marshall/optics
+  branch: main
+  
+html:
+  use_issue_button: True
+  use_repository_button: True

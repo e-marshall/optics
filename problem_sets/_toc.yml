@@ -1,0 +1,6 @@
+# table of contents
+
+format: jb-book
+root: intro
+chapters:
+- file: problem_set_1.ipynb

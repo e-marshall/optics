@@ -1,0 +1,1229 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Problem set 1 &#8212; Advanced Optics, Fall 2022</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Advanced Optics coursework" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Advanced Optics, Fall 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Advanced Optics coursework
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Problem set 1
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/e-marshall/optics/main?urlpath=tree/problem_set_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/e-marshall/optics"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/problem_set_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-packages-and-defining-functions">
+   Importing packages and defining functions:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-1">
+   Problem 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-2">
+   Problem 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-3">
+   Problem 3
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-based-on-this-value-of-e0-what-is-the-radiant-flux-in-watts-of-the-sun-hint-its-a-big-number">
+     a. Based on this value of E0, what is the radiant flux (in Watts) of the sun? Hint: It’s a big number.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-what-is-exoatmospheric-solar-irradiance-at-perihelion-1-471-x-1011m-br">
+     b. What is exoatmospheric solar irradiance at perihelion (1.471 x 1011m)?
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-what-is-exoatmospheric-solar-irradiance-at-aphelion-1-521-x-1011m-br">
+     c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)?
+     <br/>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-4">
+   Problem 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-5">
+   Problem 5
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-solar-zenith-and-azimuth-angles-at-solar-noon">
+     a. solar zenith and azimuth angles at solar noon
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-solar-zentih-and-azimuth-angles-at-6-30-pm">
+     b. solar zentih and azimuth angles at 6:30 pm
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-ratio-of-irradiance-at-6-30-pm-to-irradiance-at-solar-noon">
+     c. ratio of irradiance at 6:30 pm to irradiance at solar noon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-6">
+   Problem 6
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Problem set 1</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-packages-and-defining-functions">
+   Importing packages and defining functions:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-1">
+   Problem 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-2">
+   Problem 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-3">
+   Problem 3
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-based-on-this-value-of-e0-what-is-the-radiant-flux-in-watts-of-the-sun-hint-its-a-big-number">
+     a. Based on this value of E0, what is the radiant flux (in Watts) of the sun? Hint: It’s a big number.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-what-is-exoatmospheric-solar-irradiance-at-perihelion-1-471-x-1011m-br">
+     b. What is exoatmospheric solar irradiance at perihelion (1.471 x 1011m)?
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-what-is-exoatmospheric-solar-irradiance-at-aphelion-1-521-x-1011m-br">
+     c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)?
+     <br/>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-4">
+   Problem 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-5">
+   Problem 5
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-solar-zenith-and-azimuth-angles-at-solar-noon">
+     a. solar zenith and azimuth angles at solar noon
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-solar-zentih-and-azimuth-angles-at-6-30-pm">
+     b. solar zentih and azimuth angles at 6:30 pm
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-ratio-of-irradiance-at-6-30-pm-to-irradiance-at-solar-noon">
+     c. ratio of irradiance at 6:30 pm to irradiance at solar noon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-6">
+   Problem 6
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-set-1">
+<h1>Problem set 1<a class="headerlink" href="#problem-set-1" title="Permalink to this headline">#</a></h1>
+<p>Emma Marshall <br>
+9/13/2022</p>
+<section id="importing-packages-and-defining-functions">
+<h2>Importing packages and defining functions:<a class="headerlink" href="#importing-packages-and-defining-functions" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">pint</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
+
+<span class="kn">from</span> <span class="nn">pint</span> <span class="kn">import</span> <span class="n">UnitRegistry</span>
+
+<span class="n">ureg</span> <span class="o">=</span> <span class="n">UnitRegistry</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sci_notation</span><span class="p">(</span><span class="n">input_quantity</span><span class="p">):</span>
+    
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{:.3E}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">input_quantity</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_irradiance</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">radiant_flux</span><span class="p">):</span>
+
+    <span class="n">sigma</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sci_notation</span><span class="p">(</span><span class="n">sigma</span><span class="p">))</span>
+    <span class="n">irradiance</span> <span class="o">=</span> <span class="n">radiant_flux</span> <span class="o">/</span> <span class="n">sigma</span>
+    
+    <span class="k">return</span> <span class="n">irradiance</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_declination</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;takes j for day of year, returns declination angle in degrees&#39;&#39;&#39;</span>
+    <span class="n">delta</span> <span class="o">=</span> <span class="mf">23.45</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">((</span><span class="mi">360</span><span class="o">*</span><span class="p">(</span><span class="n">j</span><span class="o">-</span><span class="mi">172</span><span class="p">))</span><span class="o">/</span><span class="mi">365</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">delta</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_zenith</span><span class="p">(</span><span class="n">delta</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">hour_angle</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;takes declination, beta and hour angle values in degrees, returns zenith angle value in degrees&#39;&#39;&#39;</span>
+    <span class="n">cos_theta</span>  <span class="o">=</span> <span class="p">((</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">delta</span><span class="p">)))</span><span class="o">*</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">beta</span><span class="p">))))</span> <span class="o">+</span> \
+    <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">beta</span><span class="p">)))</span> <span class="o">*</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">hour_angle</span><span class="p">))))</span>
+    
+    <span class="n">theta_deg</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="n">cos_theta</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">theta_deg</span>
+     
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_azimuth</span><span class="p">(</span><span class="n">delta</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">hour_angle</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;takes declination, beta and hour angle values in degrees, returns azimuth angle value in degrees&#39;&#39;&#39;</span>
+    <span class="n">tan_phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">hour_angle</span><span class="p">)))</span><span class="o">/</span> \
+    <span class="p">((</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">beta</span><span class="p">))</span><span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">hour_angle</span><span class="p">)))</span> <span class="o">-</span> \
+     <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">beta</span><span class="p">))))</span>
+    
+    <span class="n">phi_deg</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">atan</span><span class="p">(</span><span class="n">tan_phi</span><span class="p">))</span>
+     
+    <span class="k">return</span> <span class="n">phi_deg</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">equation_of_time</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;takes j for DOY returns eqation of time in minuets&#39;&#39;&#39;</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">360</span><span class="o">*</span><span class="p">(</span><span class="n">j</span><span class="o">-</span><span class="mi">81</span><span class="p">)</span> <span class="o">/</span><span class="mi">365</span>
+    
+    <span class="n">et</span> <span class="o">=</span> <span class="p">(</span><span class="mf">9.87</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span><span class="p">)))</span> <span class="o">-</span> <span class="p">(</span><span class="mf">7.53</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">b</span><span class="p">)))</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">b</span><span class="p">)))</span>
+    
+    <span class="k">return</span> <span class="n">et</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="problem-1">
+<h2>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">#</a></h2>
+<p><strong>1. Convert 136 THz to wavelength in μm. What name do we give this spectral region?</strong></p>
+<p>c = v * lambda</p>
+<p>lambda = c / v</p>
+<p>136 THz = 136 x 10^12 Hz = 136 * 10^12 s^-1</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="mf">3e8</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">meters</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">seconds</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="mf">136e12</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">seconds</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lambda_1</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">v1</span>
+<span class="n">lambda_1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">2.2058823529411763×10<sup>-6</sup> meter</div></div>
+</div>
+<p>2.205 * 10^-6 m = <strong>2.2 um SWIR region of EM spectrum</strong></p>
+</section>
+<section id="problem-2">
+<h2>Problem 2<a class="headerlink" href="#problem-2" title="Permalink to this headline">#</a></h2>
+<p><strong>2. Convert 1150 nm to frequency (in THz) and to wavenumber (in cm-1). What name do we give
+this spectral region?</strong></p>
+<p>v = c / lambda</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lambda_2</span> <span class="o">=</span> <span class="mf">1150e-9</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">meters</span>
+<span class="n">lambda_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">1.15×10<sup>-6</sup> meter</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v_2</span> <span class="o">=</span> <span class="n">c</span> <span class="o">/</span> <span class="n">lambda_2</span>
+<span class="n">sci_notation</span><span class="p">(</span><span class="n">v_2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;2.609E+14 / second&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.609 * 10^14 Hz = <strong>261 THz SWIR region of EM spectrum</strong></p>
+<p>now calculate wavenumber:</p>
+<p>lambda = 1150 * 10^-9 m (* 100 cm/m) = 1150 * 10 ^-7 cm</p>
+<p><strong>wavenumber = 1 / 1150 * 10^-7cm = 1/1.15 * 10^-4 cm</strong></p>
+</section>
+<section id="problem-3">
+<h2>Problem 3<a class="headerlink" href="#problem-3" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Kopp and Lean (2011) found that the sunspot cycle minimum value for exoatmospheric solar
+irradiance (E0) is 1361 Wm-2 at the mean Earth-sun distance of 1.496 x 1011 m. <br>
+a. Based on this value of E0, what is the radiant flux (in Watts) of the sun? Hint: It’s a big
+number. <br>
+b. What is exoatmospheric solar irradiance at perihelion (1.471 x 1011m)? <br>
+c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)? <br></p></li>
+</ol>
+<section id="a-based-on-this-value-of-e0-what-is-the-radiant-flux-in-watts-of-the-sun-hint-its-a-big-number">
+<h3>a. Based on this value of E0, what is the radiant flux (in Watts) of the sun? Hint: It’s a big number.<a class="headerlink" href="#a-based-on-this-value-of-e0-what-is-the-radiant-flux-in-watts-of-the-sun-hint-its-a-big-number" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e_S_mean</span> <span class="o">=</span> <span class="mf">1.496e11</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">meters</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sci_notation</span><span class="p">(</span><span class="n">e_S_mean</span><span class="p">))</span>
+
+<span class="n">toa_E</span> <span class="o">=</span> <span class="mi">1361</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">watts</span> <span class="o">/</span> <span class="p">(</span><span class="n">ureg</span><span class="o">.</span><span class="n">meters</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">toa_E</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.496E+11 meter
+1361.0 watt / meter ** 2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="n">e_S_mean</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">sigma</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">2.8123738496865657×10<sup>23</sup> meter<sup>2</sup></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">radiant_flux</span> <span class="o">=</span> <span class="n">toa_E</span> <span class="o">*</span> <span class="n">sigma</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Radiant flux of the sun is: &#39;</span><span class="p">,</span> <span class="n">radiant_flux</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Radiant flux of the sun is:  3.827640809423416e+26 watt
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="b-what-is-exoatmospheric-solar-irradiance-at-perihelion-1-471-x-1011m-br">
+<h3>b. What is exoatmospheric solar irradiance at perihelion (1.471 x 1011m)? <br><a class="headerlink" href="#b-what-is-exoatmospheric-solar-irradiance-at-perihelion-1-471-x-1011m-br" title="Permalink to this headline">#</a></h3>
+<p>E = radiant flux / sigma</p>
+<p>Have radiant flux, want to calculate E for sigma when d = d_perihelion</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">perihelion_d</span> <span class="o">=</span> <span class="mf">1.471e11</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">meters</span>
+
+<span class="n">sci_notation</span><span class="p">(</span><span class="n">perihelion_d</span><span class="p">)</span>
+
+<span class="n">sigma_perihelion</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">perihelion_d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;exoatmospheric solar irradiance at perihelion is: &#39;</span><span class="p">,</span> <span class="n">radiant_flux</span> <span class="o">/</span> <span class="n">sigma_perihelion</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exoatmospheric solar irradiance at perihelion is:  1407.6541557351024 watt / meter ** 2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="c-what-is-exoatmospheric-solar-irradiance-at-aphelion-1-521-x-1011m-br">
+<h3>c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)? <br><a class="headerlink" href="#c-what-is-exoatmospheric-solar-irradiance-at-aphelion-1-521-x-1011m-br" title="Permalink to this headline">#</a></h3>
+<p>E = radiant_flux/sigma</p>
+<p>calculate E for sigma when d = d_aphelion</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aphelion_d</span> <span class="o">=</span> <span class="mf">1.521e11</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">meters</span>
+
+<span class="n">sigma_aphelion</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">aphelion_d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;exoatmospheric solar irradiance at aphelion is: &#39;</span><span class="p">,</span> <span class="n">radiant_flux</span> <span class="o">/</span> <span class="n">sigma_aphelion</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>exoatmospheric solar irradiance at aphelion is:  1316.6273857859353 watt / meter ** 2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="problem-4">
+<h2>Problem 4<a class="headerlink" href="#problem-4" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I’ve been playing around with a python package that handles units but don’t have it quite figured out yet - the units on some of the quantities with <code class="docutils literal notranslate"><span class="pre">ureg.XXXX</span></code> aren’t always correct! The units on paper should be</p>
+</div>
+<ol class="simple">
+<li><p>Convert wavelength to m</p></li>
+</ol>
+<p>0.8 um = 0.8 * 10^-6 m</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wavelength</span> <span class="o">=</span> <span class="mf">0.8e-6</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">meters</span>
+<span class="n">wavelength</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">8×10<sup>-7</sup> meter</div></div>
+</div>
+<ol class="simple">
+<li><p>convert radiance from W cm-2 sr-1 nm-1 to W m-2 sr-1 m-1</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L_lambda</span> <span class="o">=</span> <span class="mf">2.1e3</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">watts</span> <span class="o">/</span> <span class="p">(</span><span class="n">ureg</span><span class="o">.</span><span class="n">centimeters</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">nanometers</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">steradian</span>
+<span class="n">L_lambda</span> <span class="o">/</span> <span class="mf">0.0001</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">meters</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mf">1e-9</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">meter</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">2.1×10<sup>16</sup> meter<sup>3</sup> watt/(centimeter<sup>2</sup> nanometer steradian)</div></div>
+</div>
+<p>L_lambda = 2.1 * 10^16 W m^-2 sr^-1 m^-1</p>
+<ol class="simple">
+<li><p>Use eqn 1.7:</p></li>
+</ol>
+<p>L_v = (L_lambda * (lambda^2) )/c</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L_v</span> <span class="o">=</span> <span class="n">L_lambda</span> <span class="o">*</span> <span class="p">(</span><span class="n">wavelength</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">c</span>
+<span class="n">L_v</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">4.479999999999999×10<sup>-18</sup> meter second watt/(centimeter<sup>2</sup> nanometer steradian)</div></div>
+</div>
+<p>^^ Units in the above quantity (<code class="docutils literal notranslate"><span class="pre">L_v</span></code>) incorrect <br>
+answer should be: <strong>L_v  = 4.48 * 10^-5 W m^-2 sr^-1 s</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sci_notation</span><span class="p">(</span><span class="mf">2.1e3</span> <span class="o">/</span> <span class="p">(</span><span class="mf">0.01</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1e-9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;2.100E+16&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sci_notation</span><span class="p">((</span><span class="mf">0.8e-6</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;6.400E-13&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">2.1</span><span class="o">*</span><span class="mf">6.4</span><span class="o">/</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.48
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="problem-5">
+<h2>Problem 5<a class="headerlink" href="#problem-5" title="Permalink to this headline">#</a></h2>
+<p>39 deg N, 110.15 deg W <br>
+10/7/2022</p>
+<section id="a-solar-zenith-and-azimuth-angles-at-solar-noon">
+<h3>a. solar zenith and azimuth angles at solar noon<a class="headerlink" href="#a-solar-zenith-and-azimuth-angles-at-solar-noon" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta_gr</span> <span class="o">=</span> <span class="mi">39</span>
+<span class="n">lambda_gr</span> <span class="o">=</span> <span class="o">-</span><span class="mf">110.15</span>
+<span class="n">j_oct7</span> <span class="o">=</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">28</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span><span class="mi">30</span> <span class="o">+</span> <span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">delta_oct7</span> <span class="o">=</span> <span class="n">calc_declination</span><span class="p">(</span><span class="n">j_oct7</span><span class="p">)</span>
+<span class="n">delta_oct7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-6.6682229417395344
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_oct7_solar_noon</span> <span class="o">=</span> <span class="n">calc_zenith</span><span class="p">(</span><span class="n">delta_oct7</span><span class="p">,</span> <span class="n">beta_gr</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">theta_oct7_solar_noon</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>45.668222941739536
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">phi_oct7_solar_noon</span> <span class="o">=</span> <span class="n">calc_azimuth</span><span class="p">(</span><span class="n">delta_oct7</span><span class="p">,</span> <span class="n">beta_gr</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">phi_oct7_solar_noon</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="b-solar-zentih-and-azimuth-angles-at-6-30-pm">
+<h3>b. solar zentih and azimuth angles at 6:30 pm<a class="headerlink" href="#b-solar-zentih-and-azimuth-angles-at-6-30-pm" title="Permalink to this headline">#</a></h3>
+<p>use equation of time, DST, position within time zone to find time of solar noon, find difference btw solar noon time and 6:30 pm to find hour angle, solve for zenith, azimuth:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">et_oct7</span> <span class="o">=</span> <span class="n">equation_of_time</span><span class="p">(</span><span class="n">j_oct7</span><span class="p">)</span>
+<span class="n">et_oct7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12.958750209019716
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">noon</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">time</span><span class="p">(</span><span class="n">hour</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">noon</span> 
+<span class="n">et_time</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span> <span class="o">=</span> <span class="n">et_oct7</span><span class="p">)</span>
+<span class="n">et_time</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.timedelta(seconds=777, microseconds=525013)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;12:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">et_oct7</span><span class="p">)[</span><span class="mi">2</span><span class="p">:])))</span> <span class="c1">#this is the amount of minutes ahead of noon at which solar noon occurs</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;12:58.0&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>So before taking into account DST, position within time zone, solar noon occurs at 11:47:02</p>
+<p>After DST: 12:47:02</p>
+<p>taking into account position within time zone:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">central_meridian</span> <span class="o">=</span> <span class="mi">105</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">longitude_offset</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">lambda_gr</span><span class="p">)</span> <span class="o">-</span> <span class="n">central_meridian</span>
+
+<span class="n">longitude_adjustment</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">longitude_offset</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">minutes</span>
+<span class="n">longitude_adjustment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">21.0 minute</div></div>
+</div>
+<p>Solar noon in Green River on October 7: 12:47:02 + 21 minutes = 1:08:02 pm</p>
+<p>Time difference between solar noon, target time (6:30 pm):</p>
+<p>6 hr 21 min 58 sec <br>
+as a decimal:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span><span class="o">+</span><span class="p">(</span><span class="mi">22</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.366666666666666
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now calculate hour angle:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hour_angle_time</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="p">(</span><span class="mi">22</span><span class="o">/</span><span class="mi">60</span><span class="p">))</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">hours</span>
+
+<span class="n">hour_angle</span> <span class="o">=</span> <span class="o">-</span> <span class="p">(</span><span class="n">hour_angle_time</span> <span class="o">*</span> <span class="mi">15</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">degrees</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">hours</span><span class="p">)</span>
+<span class="n">hour_angle</span> <span class="c1"># negative because pm</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">-80.5 degree</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gr_zenith_6pm</span> <span class="o">=</span> <span class="n">calc_zenith</span><span class="p">(</span><span class="n">delta_oct7</span><span class="p">,</span> <span class="n">beta_gr</span><span class="p">,</span> <span class="o">-</span><span class="mf">80.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gr_zenith_6pm</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>86.88605907946422
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gr_azimuth_6pm</span> <span class="o">=</span> <span class="n">calc_azimuth</span><span class="p">(</span><span class="n">delta_oct7</span><span class="p">,</span> <span class="n">beta_gr</span><span class="p">,</span> <span class="o">-</span><span class="mf">80.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gr_azimuth_6pm</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-78.83160146544657
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="c-ratio-of-irradiance-at-6-30-pm-to-irradiance-at-solar-noon">
+<h3>c. ratio of irradiance at 6:30 pm to irradiance at solar noon<a class="headerlink" href="#c-ratio-of-irradiance-at-6-30-pm-to-irradiance-at-solar-noon" title="Permalink to this headline">#</a></h3>
+<p>Use lambert’s cosine law</p>
+<p>E_theta = E_nought(cos_theta)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">gr_zenith_6pm</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.054321770295687744
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="problem-6">
+<h2>Problem 6<a class="headerlink" href="#problem-6" title="Permalink to this headline">#</a></h2>
+<p>Assuming same date, loc as prob 5. E_10am = 395 Wm2 <br>
+Find E_2pm on 20 deg S-facing slope</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_10am</span> <span class="o">=</span> <span class="mi">395</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">watts</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">meters</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">E_10am</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">395.0 watt/meter<sup>2</sup></div></div>
+</div>
+<ol class="simple">
+<li><p>Use Lambert’s cosine law to find irradiance at solar noon (first need to find theta_10am)</p></li>
+</ol>
+<p>Time difference btw 10 am, 1:08:02 pm = 3:08:02</p>
+<p>as a decimal:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time_diff_10a</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="p">(</span><span class="mi">8</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time_diff_10a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1333333333333333
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hour_angle_10a</span> <span class="o">=</span> <span class="n">time_diff_10a</span> <span class="o">*</span> <span class="mi">15</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">degrees</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hour_angle_10a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">47.0 degree</div></div>
+</div>
+<p>Now can calculate zenith angle at 10 am:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gr_theta_10a</span> <span class="o">=</span> <span class="n">calc_zenith</span><span class="p">(</span><span class="n">delta_oct7</span><span class="p">,</span> <span class="n">beta_gr</span><span class="p">,</span> <span class="mi">47</span><span class="p">)</span> <span class="o">*</span> <span class="n">ureg</span><span class="o">.</span><span class="n">degrees</span>
+<span class="n">gr_theta_10a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">63.04116471848333 degree</div></div>
+</div>
+<p>Irradiance at solar noon:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_solar_noon</span> <span class="o">=</span> <span class="n">E_10am</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">63.041</span><span class="p">))</span>
+<span class="n">E_solar_noon</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">871.2861294661369 watt/meter<sup>2</sup></div></div>
+</div>
+<p>Will use the equation for cos(theta) of a sloped surface to solve for irradiance at the sloped surface at 2pm. First need zenith and azimuth at 2pm</p>
+<p>time difference btw 2pm, solar noon = 51 mins 58 sec. as a decimal:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time_diff_2p</span> <span class="o">=</span> <span class="p">(</span><span class="mi">52</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">hour_angle_2p</span> <span class="o">=</span> <span class="n">time_diff_2p</span> <span class="o">*</span> <span class="mi">15</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">degrees</span>
+<span class="n">hour_angle_2p</span> <span class="c1">#negative because afternoon</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">13.0 degree</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_2pm</span> <span class="o">=</span> <span class="n">calc_zenith</span><span class="p">(</span><span class="o">-</span><span class="mf">6.68</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="o">-</span><span class="mi">13</span><span class="p">)</span>
+<span class="n">theta_2pm</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>47.24365317128634
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">phi_2pm</span> <span class="o">=</span> <span class="n">calc_azimuth</span><span class="p">(</span><span class="o">-</span><span class="mf">6.68</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="o">-</span><span class="mi">13</span><span class="p">)</span>
+<span class="n">phi_2pm</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-17.715438793193172
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slope</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">exposure</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, use equation for cos(theta) on a sloped surface to solve for cos_theta</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_zenith_slope</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">slope</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">exposure</span><span class="p">):</span>
+    
+    <span class="n">cos_theta_slope</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">slope</span><span class="p">))</span>  <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">slope</span><span class="p">))</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">phi</span> <span class="o">-</span> <span class="n">exposure</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">cos_theta_slope</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cos_theta_slope</span> <span class="o">=</span> <span class="n">calc_zenith_slope</span><span class="p">(</span><span class="n">theta_2pm</span><span class="p">,</span> <span class="n">slope</span><span class="p">,</span> <span class="n">phi_2pm</span><span class="p">,</span> <span class="n">exposure</span><span class="p">)</span>
+<span class="n">cos_theta_slope</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.877159276307219
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_2pm_slope</span> <span class="o">=</span> <span class="n">E_solar_noon</span> <span class="o">*</span> <span class="n">cos_theta_slope</span>
+<span class="n">E_2pm_slope</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">764.2567107790346 watt/meter<sup>2</sup></div></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Advanced Optics coursework</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By emma marshall<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
