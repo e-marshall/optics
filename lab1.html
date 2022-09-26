@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Lab 1: Directional Reflectance &#8212; Advanced Optics, Fall 2022</title>
+    <title>Lab 1 &#8212; Advanced Optics, Fall 2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -115,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Lab 1: Directional Reflectance
+   Lab 1
   </a>
  </li>
 </ul>
@@ -293,6 +293,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-1-directional-reflectance">
+   Lab 1: Directional Reflectance
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reading-in-data">
    Reading in data
   </a>
@@ -341,7 +346,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lab 1: Directional Reflectance</h1>
+                <h1>Lab 1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -351,6 +356,11 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-1-directional-reflectance">
+   Lab 1: Directional Reflectance
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reading-in-data">
    Reading in data
@@ -401,8 +411,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="lab-1-directional-reflectance">
-<h1>Lab 1: Directional Reflectance<a class="headerlink" href="#lab-1-directional-reflectance" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="lab-1">
+<h1>Lab 1<a class="headerlink" href="#lab-1" title="Permalink to this headline">#</a></h1>
+<section id="lab-1-directional-reflectance">
+<h2>Lab 1: Directional Reflectance<a class="headerlink" href="#lab-1-directional-reflectance" title="Permalink to this headline">#</a></h2>
 <p>Emma Marshall <br>
 Lab group: Eric Goodwin, Kylie Rees, Emma Marshall</p>
 <div class="cell docutils container">
@@ -420,6 +432,7 @@ Lab group: Eric Goodwin, Kylie Rees, Emma Marshall</p>
 </div>
 </div>
 </div>
+</section>
 <section id="reading-in-data">
 <h2>Reading in data<a class="headerlink" href="#reading-in-data" title="Permalink to this headline">#</a></h2>
 <p>Following cells construct table 1 from lab worksheet:</p>
@@ -796,6 +809,10 @@ Lab group: Eric Goodwin, Kylie Rees, Emma Marshall</p>
     <span class="n">angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span> <span class="o">=</span> <span class="s1">&#39;upper right&#39;</span><span class="p">,</span>
               <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mf">.5</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Voltage (V)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;View zenith angle (deg)&#39;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="o">-</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">)</span>
 
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -812,7 +829,7 @@ Lab group: Eric Goodwin, Kylie Rees, Emma Marshall</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/lab1_20_0.png" src="_images/lab1_20_0.png" />
+<img alt="_images/lab1_21_0.png" src="_images/lab1_21_0.png" />
 </div>
 </div>
 </section>
@@ -825,7 +842,7 @@ Lab group: Eric Goodwin, Kylie Rees, Emma Marshall</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/lab1_22_0.png" src="_images/lab1_22_0.png" />
+<img alt="_images/lab1_23_0.png" src="_images/lab1_23_0.png" />
 </div>
 </div>
 </section>
@@ -988,14 +1005,15 @@ Lab group: Eric Goodwin, Kylie Rees, Emma Marshall</p>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">table3</span><span class="p">[</span><span class="s1">&#39;radians&#39;</span><span class="p">],</span> <span class="n">table3</span><span class="p">[</span><span class="s1">&#39;voltage&#39;</span><span class="p">]);</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Reflectance from 0 degree view zenith when light source zenith changes&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Voltage (V)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Light source zenith angle (deg)&#39;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span> <span class="mi">60</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="o">-</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Reflectance from 0 degree view zenith when light source zenith changes&#39;)
-</pre></div>
-</div>
-<img alt="_images/lab1_30_1.png" src="_images/lab1_30_1.png" />
+<img alt="_images/lab1_31_0.png" src="_images/lab1_31_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1181,7 +1199,7 @@ dtype: float64
   <th>Date:</th>             <td>Mon, 26 Sep 2022</td> <th>  Prob (F-statistic):</th> <td>2.20e-10</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>11:05:57</td>     <th>  Log-Likelihood:    </th> <td>  41.691</td>
+  <th>Time:</th>                 <td>11:27:34</td>     <th>  Log-Likelihood:    </th> <td>  41.691</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    10</td>      <th>  AIC:               </th> <td>  -79.38</td>
@@ -1241,10 +1259,10 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f5ecc253ee0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f41754d3010&gt;
 </pre></div>
 </div>
-<img alt="_images/lab1_39_1.png" src="_images/lab1_39_1.png" />
+<img alt="_images/lab1_40_1.png" src="_images/lab1_40_1.png" />
 </div>
 </div>
 <p>Cos(theta) is a good predictor of voltage when voltage is considered as a proxy for directional reflectance.</p>
