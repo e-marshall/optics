@@ -4,3 +4,4 @@ format: jb-book
 root: intro
 chapters:
 - file: problem_set_1.ipynb
+- file: lab1.ipynb
