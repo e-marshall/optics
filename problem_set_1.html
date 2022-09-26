@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lab 1: Directional Reflectance" href="lab1.html" />
     <link rel="prev" title="Advanced Optics coursework" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -111,6 +112,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Problem set 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab1.html">
+   Lab 1: Directional Reflectance
   </a>
  </li>
 </ul>
@@ -719,9 +725,7 @@ c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)? <br></p>
 <p class="admonition-title">Note</p>
 <p>I’ve been playing around with a python package that handles units but don’t have it quite figured out yet - the units on some of the quantities with <code class="docutils literal notranslate"><span class="pre">ureg.XXXX</span></code> aren’t always correct! The units on paper should be</p>
 </div>
-<ol class="simple">
-<li><p>Convert wavelength to m</p></li>
-</ol>
+<p>1 - Convert wavelength to m</p>
 <p>0.8 um = 0.8 * 10^-6 m</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -733,9 +737,7 @@ c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)? <br></p>
 <div class="cell_output docutils container">
 <div class="output text_html">8×10<sup>-7</sup> meter</div></div>
 </div>
-<ol class="simple">
-<li><p>convert radiance from W cm-2 sr-1 nm-1 to W m-2 sr-1 m-1</p></li>
-</ol>
+<p>2 - convert radiance from W cm-2 sr-1 nm-1 to W m-2 sr-1 m-1</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L_lambda</span> <span class="o">=</span> <span class="mf">2.1e3</span> <span class="o">*</span><span class="n">ureg</span><span class="o">.</span><span class="n">watts</span> <span class="o">/</span> <span class="p">(</span><span class="n">ureg</span><span class="o">.</span><span class="n">centimeters</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">nanometers</span> <span class="o">/</span> <span class="n">ureg</span><span class="o">.</span><span class="n">steradian</span>
@@ -747,9 +749,7 @@ c. What is exoatmospheric solar irradiance at aphelion (1.521 x 1011m)? <br></p>
 <div class="output text_html">2.1×10<sup>16</sup> meter<sup>3</sup> watt/(centimeter<sup>2</sup> nanometer steradian)</div></div>
 </div>
 <p>L_lambda = 2.1 * 10^16 W m^-2 sr^-1 m^-1</p>
-<ol class="simple">
-<li><p>Use eqn 1.7:</p></li>
-</ol>
+<p>3 -  Use eqn 1.7:</p>
 <p>L_v = (L_lambda * (lambda^2) )/c</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1200,6 +1200,13 @@ Find E_2pm on 20 deg S-facing slope</p>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Advanced Optics coursework</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="lab1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lab 1: Directional Reflectance</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
