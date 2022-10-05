@@ -1,0 +1,1270 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Problem Set 2 &#8212; Advanced Optics, Fall 2022</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Lab 1" href="lab1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Advanced Optics, Fall 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Advanced Optics coursework
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="problem_set_1.html">
+   Problem set 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lab1.html">
+   Lab 1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Problem Set 2
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/e-marshall/optics/main?urlpath=tree/problem_set_2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/e-marshall/optics"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/problem_set_2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-1">
+   Problem 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-2">
+   Problem 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-3">
+   Problem 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-4">
+   Problem 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-5">
+   Problem 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-6">
+   Problem 6
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#now-600-nm">
+     now 600 nm:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Problem Set 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-1">
+   Problem 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-2">
+   Problem 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-3">
+   Problem 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-4">
+   Problem 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-5">
+   Problem 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-6">
+   Problem 6
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#now-600-nm">
+     now 600 nm:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-set-2">
+<h1>Problem Set 2<a class="headerlink" href="#problem-set-2" title="Permalink to this headline">#</a></h1>
+<p>Emma Marshall</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="problem-1">
+<h2>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="problem-2">
+<h2>Problem 2<a class="headerlink" href="#problem-2" title="Permalink to this headline">#</a></h2>
+<p>Calculate angle of refraction of 500nm wavelength signal passing air-water interface at incidence angle of 67 degrees</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_1</span> <span class="o">=</span> <span class="mi">67</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>67
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">n_2</span> <span class="o">=</span> <span class="mf">1.339</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_2</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">asin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_1</span><span class="p">))</span> <span class="o">/</span> <span class="n">n_2</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>43.429139864999954
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="problem-3">
+<h2>Problem 3<a class="headerlink" href="#problem-3" title="Permalink to this headline">#</a></h2>
+<p>What is reflectance of a smooth water surface at 500nm if solar zenith angle is 81 deg ?</p>
+<ol class="simple">
+<li><p>find theta_2 (Snel’s Law)</p></li>
+<li><p>find reflectance (Fresnel’s)</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_13</span> <span class="o">=</span> <span class="mi">81</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_theta2</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">theta1</span><span class="p">):</span>
+    
+    <span class="n">theta2</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">asin</span><span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta1</span><span class="p">))</span><span class="o">/</span><span class="n">n2</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">theta2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_23</span> <span class="o">=</span> <span class="n">calc_theta2</span><span class="p">(</span><span class="n">n_1</span><span class="p">,</span> <span class="n">n_2</span><span class="p">,</span> <span class="n">theta_13</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_23</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>47.530029563448416
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref_par</span> <span class="o">=</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_13</span> <span class="o">-</span> <span class="n">theta_23</span><span class="p">))</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_13</span> <span class="o">+</span> <span class="n">theta_23</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref_par</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2771540282379578
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref_perp</span> <span class="o">=</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_13</span> <span class="o">-</span> <span class="n">theta_23</span><span class="p">))</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_13</span> <span class="o">+</span> <span class="n">theta_23</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref_perp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.49700914346617886
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tot_ref</span> <span class="o">=</span> <span class="p">(</span><span class="n">ref_par</span> <span class="o">+</span> <span class="n">ref_perp</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tot_ref</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.3870815858520683
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fresnels3</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span> <span class="n">theta2</span><span class="p">):</span>
+    
+    <span class="n">dif1</span> <span class="o">=</span> <span class="n">theta1</span> <span class="o">-</span> <span class="n">theta2</span>
+    <span class="n">sum1</span> <span class="o">=</span> <span class="n">theta1</span> <span class="o">+</span> <span class="n">theta2</span> 
+    
+    <span class="n">ref_par</span> <span class="o">=</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta1</span> <span class="o">-</span> <span class="n">theta2</span><span class="p">))</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta1</span> <span class="o">+</span> <span class="n">theta2</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">ref_perp</span> <span class="o">=</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta1</span> <span class="o">-</span> <span class="n">theta2</span><span class="p">))</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta1</span> <span class="o">+</span> <span class="n">theta2</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">ref_tot</span> <span class="o">=</span> <span class="p">(</span><span class="n">ref_par</span> <span class="o">+</span> <span class="n">ref_perp</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    
+    <span class="k">return</span> <span class="n">ref_tot</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tot_ref1</span> <span class="o">=</span> <span class="n">fresnels3</span><span class="p">(</span><span class="mi">81</span><span class="p">,</span> <span class="mf">47.53</span><span class="p">)</span>
+<span class="n">tot_ref2</span> <span class="o">=</span> <span class="n">fresnels3</span><span class="p">(</span><span class="mi">81</span><span class="p">,</span> <span class="n">theta_23</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tot_ref2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.3870815858520683
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="problem-4">
+<h2>Problem 4<a class="headerlink" href="#problem-4" title="Permalink to this headline">#</a></h2>
+<p>Calculate transmittance of light through 8m of water at 600 nm, 700nm</p>
+<p>600 nm:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">k_600</span> <span class="o">=</span> <span class="mf">1.06188e-8</span>
+<span class="n">lambda_600</span> <span class="o">=</span> <span class="mf">600e-9</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_alpha</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">k</span><span class="p">)</span> <span class="o">/</span> <span class="n">l</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_transmittance</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>600 nm:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_600</span> <span class="o">=</span> <span class="n">calc_transmittance</span><span class="p">(</span><span class="n">calc_alpha</span><span class="p">(</span><span class="n">k_600</span><span class="p">,</span> <span class="n">lambda_600</span><span class="p">),</span> <span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_600</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.16877361520524894
+</pre></div>
+</div>
+</div>
+</div>
+<p>700 nm:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k_700</span> <span class="o">=</span> <span class="mf">3.1874e-8</span>
+<span class="n">lambda_700</span> <span class="o">=</span> <span class="mf">700e-9</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_700</span> <span class="o">=</span> <span class="n">calc_transmittance</span><span class="p">(</span><span class="n">calc_alpha</span><span class="p">(</span><span class="n">k_700</span><span class="p">,</span><span class="n">lambda_700</span><span class="p">),</span> <span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_700</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.010279479222104749
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="problem-5">
+<h2>Problem 5<a class="headerlink" href="#problem-5" title="Permalink to this headline">#</a></h2>
+<p>Using a wavelength of 600 nm, calculate transmittance of light to a <strong>depth of 5m</strong> if the solar zenith angle is 74 degrees. Account for reflectance off water surface and path length effects</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_15</span> <span class="o">=</span> <span class="mi">74</span>
+<span class="n">n_600</span> <span class="o">=</span> <span class="mf">1.331</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_25</span> <span class="o">=</span> <span class="n">calc_theta2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_600</span><span class="p">,</span> <span class="n">theta_15</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_25</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>46.23725642505391
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now calc reflectance:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref5</span> <span class="o">=</span> <span class="n">fresnels3</span><span class="p">(</span><span class="n">theta_15</span><span class="p">,</span> <span class="n">theta_25</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.192424298810617
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transmittance_5</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">ref5</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transmittance_5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8075757011893829
+</pre></div>
+</div>
+</div>
+</div>
+<p>calculate path length:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_length</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_25</span><span class="p">))</span>
+<span class="n">path_length</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7.228842103189072
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alpha5</span> <span class="o">=</span> <span class="n">calc_alpha</span><span class="p">(</span><span class="n">k_600</span><span class="p">,</span> <span class="n">lambda_600</span><span class="p">)</span>
+<span class="n">alpha5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.22239962713292866
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transmittance_52</span> <span class="o">=</span> <span class="n">calc_transmittance</span><span class="p">(</span><span class="n">alpha5</span><span class="p">,</span> <span class="n">path_length</span><span class="p">)</span>
+<span class="n">transmittance_52</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.20034952988887694
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="problem-6">
+<h2>Problem 6<a class="headerlink" href="#problem-6" title="Permalink to this headline">#</a></h2>
+<p>The max. depth of Utah Lake (lat = 40.25 N, lon = 111.8 W) is approx 4.3 m.  <br>
+Find transmittance to maximum depth at 500 and 600 nm at 5:23 pm MDT, april 3, 2023</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">optics_functions</span>
+<span class="kn">from</span> <span class="nn">optics_functions</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>First calculate j for october 3 2023:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">j_oct3</span> <span class="o">=</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">28</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="n">j_oct3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>276
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">j_apr23</span> <span class="o">=</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">28</span> <span class="o">+</span> <span class="mi">31</span> <span class="o">+</span> <span class="mi">23</span>
+<span class="n">j_apr23</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>113
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta_ul</span> <span class="o">=</span> <span class="mf">40.25</span>
+<span class="n">lambda_ul</span> <span class="o">=</span> <span class="o">-</span><span class="mf">111.8</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calculate declination:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dec_apr23</span> <span class="o">=</span> <span class="n">calc_declination</span><span class="p">(</span><span class="n">j_apr23</span><span class="p">)</span>
+<span class="n">dec_apr23</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12.359972267663629
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">et_apr23_num</span> <span class="o">=</span> <span class="n">equation_of_time</span><span class="p">(</span><span class="n">j_apr23</span><span class="p">)</span>
+<span class="n">et_apr23_num</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.6025887446145586
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">et_decimal</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">et_apr23_num</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">et_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">et_apr23_num</span><span class="p">)[:</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">et_decimal</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">et_int</span><span class="p">)</span>
+
+<span class="n">et_apr23_time</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">et_int</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="n">et_decimal</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="n">et_apr23_time</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6
+1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1:36&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Equation of time:</p>
+<p>So solar noon occurs 1 minute, 36 seconds before noon on 10/3. =&gt; <strong>11:58:24 am</strong></p>
+<p>Position within time zone:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">central_meridian</span> <span class="o">=</span> <span class="mi">105</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">longitude_offset</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">lambda_ul</span><span class="p">)</span> <span class="o">-</span> <span class="n">central_meridian</span>
+<span class="n">longitude_offset</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.799999999999997
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">longitude_adjustment</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">longitude_offset</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">longitude_adjustment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>27.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Taking into account position with time zone, solar noon occurs at:</p>
+<p>11:58:24 am + 27 minutes =&gt; <strong>12:25:24 pm</strong></p>
+<p>Add hour for daylight savings: <strong>1:25:24 pm</strong></p>
+<p>Now calculate difference between target time and solar noon:</p>
+<p>target time = 5:23 pm
+solar noon = 1:25 pm</p>
+<p><strong>time diff = 3 hr 58 min</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hour_angle_time</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="p">(</span><span class="mi">58</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">hour_angle_time</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.966666666666667
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calculate hour angle time:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hour_angle</span> <span class="o">=</span> <span class="n">hour_angle_time</span> <span class="o">*</span> <span class="mi">15</span>
+<span class="n">hour_angle</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>59.5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, calculate solar zenith angle at Utah Lake on Oct 3 at 5:23 pm <br>
+vars needed: dec_oct3, beta_ul, hour_angle</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zenith_ul</span> <span class="o">=</span> <span class="n">calc_zenith</span><span class="p">(</span><span class="n">dec_apr23</span><span class="p">,</span> <span class="n">beta_ul</span><span class="p">,</span> <span class="n">hour_angle</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zenith_ul</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>58.88910965907641
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calculate angle of refraction given incidence angle (zenith_ul)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta2_ul_500</span> <span class="o">=</span> <span class="n">calc_theta2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.339</span><span class="p">,</span> <span class="n">zenith_ul</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta2_ul_500</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>39.74777754922273
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calculate reflection (and then transmittance):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reflectance_ul_500</span> <span class="o">=</span> <span class="n">fresnels3</span><span class="p">(</span><span class="n">zenith_ul</span><span class="p">,</span> <span class="n">theta2_ul_500</span><span class="p">)</span>
+<span class="n">reflectance_ul_500</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.05638910431467634
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_fr_500</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">reflectance_ul_500</span>
+<span class="n">t_fr_500</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9436108956853236
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k_500</span> <span class="o">=</span> <span class="mf">9.46972e-10</span>
+<span class="n">lambda_500</span> <span class="o">=</span> <span class="mf">500e-9</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_length_ul_500</span> <span class="o">=</span> <span class="mf">4.3</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta2_ul_500</span><span class="p">))</span>
+<span class="n">path_length_ul_500</span>        
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.592647418508186
+</pre></div>
+</div>
+</div>
+</div>
+<p>6.4 m radiation path length through lake depth</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_beers_500</span> <span class="o">=</span> <span class="n">calc_transmittance</span><span class="p">(</span><span class="n">calc_alpha</span><span class="p">(</span><span class="n">k_500</span><span class="p">,</span> <span class="n">lambda_500</span><span class="p">),</span> <span class="n">path_length_ul_500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_beers_500</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8753731547044585
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T_tot_500</span> <span class="o">=</span> <span class="n">t_fr_500</span> <span class="o">*</span> <span class="n">t_beers_500</span>
+<span class="n">T_tot_500</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8260116465695615
+</pre></div>
+</div>
+</div>
+</div>
+<section id="now-600-nm">
+<h3>now 600 nm:<a class="headerlink" href="#now-600-nm" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_2_600</span> <span class="o">=</span> <span class="n">calc_theta2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mf">1.331</span><span class="p">,</span> <span class="mf">58.89</span><span class="p">)</span>
+<span class="n">theta_2_600</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>40.035220917847795
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ref_tot</span> <span class="o">=</span> <span class="n">fresnels3</span><span class="p">(</span><span class="mf">58.89</span><span class="p">,</span> <span class="mf">40.035</span><span class="p">)</span>
+<span class="n">ref_tot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.05494678681117409
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T_fr_600</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">ref_tot</span>
+<span class="n">T_fr_600</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.945053213188826
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_length_600</span> <span class="o">=</span> <span class="mf">4.3</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_2_600</span><span class="p">))</span>
+<span class="n">path_length_600</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.6161492830993005
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T_beers_600</span> <span class="o">=</span> <span class="n">calc_transmittance</span><span class="p">(</span><span class="n">calc_alpha</span><span class="p">(</span><span class="n">k_600</span><span class="p">,</span> <span class="n">lambda_600</span><span class="p">),</span> <span class="n">path_length_600</span><span class="p">)</span>
+<span class="n">T_beers_600</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2867829828748305
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T_tot_600</span> <span class="o">=</span> <span class="n">T_fr_600</span> <span class="o">*</span> <span class="n">T_beers_600</span>
+<span class="n">T_tot_600</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2710251794537346
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">optics_functions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on module optics_functions:
+
+NAME
+    optics_functions - #functions for optics
+
+FUNCTIONS
+    calc_alpha(k, l)
+        return absorption coefficient given k and lambda
+    
+    calc_azimuth(delta, beta, hour_angle)
+        takes declination, beta and hour angle values in degrees, returns azimuth angle value in degrees
+    
+    calc_declination(j)
+        takes j for day of year, returns declination angle in degrees
+    
+    calc_irradiance(d, radiant_flux)
+        calculate irradiance given a distance, d and radiant flux
+    
+    calc_theta2(n1, n2, theta1)
+        snel&#39;s law - return theta2
+    
+    calc_transmittance(alpha, d)
+        calculate transmittance thru a medium given a certain path length distance and absorption coefficient
+    
+    calc_zenith(delta, beta, hour_angle)
+        takes declination, beta and hour angle values in degrees, returns zenith angle value in degrees
+    
+    equation_of_time(j)
+        takes j for DOY returns eqation of time in minuets
+    
+    fresnels3(theta1, theta2)
+        fresnel&#39;s equation
+
+FILE
+    /home/emmamarshall/Desktop/courses/optics/problem_sets/optics_functions.py
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="lab1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Lab 1</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By emma marshall<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
