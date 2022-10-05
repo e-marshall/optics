@@ -5,3 +5,5 @@ root: intro
 chapters:
 - file: problem_set_1.ipynb
 - file: lab1.ipynb
+- file: problem_set_2.ipynb
+- file: optics_functions.py
