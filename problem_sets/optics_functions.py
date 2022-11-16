@@ -71,3 +71,11 @@ def calc_alpha(k, l):
 def calc_transmittance(alpha, d):
     '''calculate transmittance thru a medium given a certain path length distance and absorption coefficient'''
     return math.exp(-alpha*d)
+
+def beerlambert_oz(E_nought, tau_nought, theta):
+    '''Beer Lambert's Law taking into account optical depth and zenith angle'''
+    x = (-tau_n / math.cos(math.radians(theta)))
+    
+    E_theta = E_n * math.exp(x)
+    
+    return E_theta
