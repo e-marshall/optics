@@ -645,8 +645,22 @@ title="Print to PDF"
 <li><p>The two containers start at approximately the same temperature and then display different cooling rates over time. The glass container cools more rapidly than the foil-covered container. Both containers exhibit higher rates of cooling at the beginning of the time period, with slower rates of temperature loss over time. The change in the cooling rater over time of the foil-covered container is less than that of the glass container. They will eventually reach the same equilibrium temperature but it will take different times for each to do so.</p></li>
 </ol>
 <ol class="simple">
-<li><p><span class="xref myst">written equations</span></p></li>
+<li><p>net radiation equations</p></li>
 </ol>
+<div class="math notranslate nohighlight">
+\[ E_{net} = E_{incoming SW} + E_{incoming LW} - M_{outgoing SW} - M_{outgoing LW}\]</div>
+<p>We can disregard outgoing shortwave so net radiation becomes:</p>
+<div class="math notranslate nohighlight">
+\[ E_{net} = (1-a_{surface SW})E_{0}cos(\theta) +  (1-a_{surf LW}){\varepsilon}_{env} {\sigma}T_{env}^4 - {\varepsilon}_{surf}{\sigma}T_{surf}^4\]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                                                                  incoming SW           incoming LW        outgoing LW
+</pre></div>
+</div>
+<p>for each jar:</p>
+<div class="math notranslate nohighlight">
+\[ E_{net glass} = (1-a_{surf SW})E_{0}cos(\theta) + (1-a_{surf LW}){\varepsilon}_{env}{\sigma}T_{env}^4 - {\varepsilon}_{glass}{\sigma}T_{glass}^4   \]</div>
+<div class="math notranslate nohighlight">
+\[ E_{net foil} = (1-a_{surf SW})E_{0}cos(\theta) + (1-a_{surf LW}){\varepsilon}_{env}{\sigma}T_{env}^4 - {\varepsilon}_{foil}{\sigma}T_{glass}^4 \]</div>
+<p><span class="math notranslate nohighlight">\({\varepsilon}_{glass}\)</span>  is high,  <span class="math notranslate nohighlight">\({\varepsilon}_{foil}\)</span> is low, so <span class="math notranslate nohighlight">\({\varepsilon}_{glass} &gt; {\varepsilon}_{foil}\)</span>. The difference in emissivity will also impact incoming LW but the strongest effect is the impact of emissivity on outgoing LW, which we see reflected in the temp. v time curves.</p>
 <ol class="simple">
 <li><p>Yes, using a thermal radiometer to measure the radiant temperatures of the objects at t=0 would show different temperatures between the two jars. The radiant temperature takes into account the  emitted radiation rather than the internal energy, so differences in emissivity will produce different radiant temperatures.</p></li>
 </ol>
